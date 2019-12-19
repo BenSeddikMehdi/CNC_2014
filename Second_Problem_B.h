@@ -1,5 +1,5 @@
 //
-// Created by Hp-EliteBook on 10/23/2019.
+// Created by El Mehdi Benseddik on 10/23/2019.
 //
 
 #ifndef CNC_2014_SECOND_PROBLEM_B_H
