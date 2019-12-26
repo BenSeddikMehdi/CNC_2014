@@ -20,7 +20,7 @@ queue_t pList_3 = {"File_7.txt",NULL};
 queue_t *pList, *pList2;
 /* Question 8 */
 /**************/
-int display(){
+int display() {
     pList = &pList_0;
     pList_0.next = &pList_1;
     pList_1.next = &pList_2;
