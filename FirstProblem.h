@@ -94,9 +94,9 @@ int dichotomousSearch(int N, int T[], int inf, int sup, int x){
     if (x == T[m])
         return m;
     else if (x < T[m])
-        dichotomousSearch(m,T,inf,m-1,x);
+        return dichotomousSearch(m,T,inf,m-1,x);
     else
-        dichotomousSearch(m,T,m+1,sup,x);
+        return dichotomousSearch(m,T,m+1,sup,x);
 }
 
 /* Fourth Question 4-b */
