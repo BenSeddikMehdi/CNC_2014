@@ -8,7 +8,7 @@
 
 /* First Question */
 /******************/
-int addressIP(int TO[4]){
+int addressIP(const int TO[4]){
     for (int i = 0; i < 4; ++i) {
         if (TO[i] < 0 || TO[i] > 255)
             return 0;
@@ -104,11 +104,11 @@ int dichotomousSearch(int N, int T[], int inf, int sup, int x){
 typedef struct {
     int hostId;
     char name[100];
-}machine;
+}machine_t;
 
-//machine tabMachine[N_tab];
+//machine_t tabMachine[N_tab];
 
-int machineName(int N, machine tabMachine[], int x, char *nameR[]){
+int machineName(int N, machine_t tabMachine[], int x, char *nameR[]){
     int tab[N];
     for (int i = 0; i < N; ++i) {
         tab[i] = tabMachine[i].hostId;
